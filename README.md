@@ -24,15 +24,19 @@ pip install -r requirements.txt
 python env_utils.py
 ```
 
-## Local running
+## Local editor
 ```bash
 jupyter lab
 ```
-and 
+
+## Model UI interaction
 ```bash
-cd ./module1 # 2,3
-langgraph dev
+cd ./module1
+# based on notebooks/module-1/langgraph.json
+langgraph dev --tunnel
 ```
 
 ## Links
 - https://ollama.com/
+- https://www.tavily.com/ search web engine for AI agents (even crawling)
+- https://academy.langchain.com/courses/take/foundation-introduction-to-langchain-python/lessons/71234859-module-2-introduction

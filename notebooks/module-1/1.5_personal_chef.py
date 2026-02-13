@@ -26,9 +26,12 @@ Return recipe suggestions and eventually the recipe instructions to the user, if
 """
 
 from langchain.agents import create_agent
+from langchain_ollama import ChatOllama
+
+model = ChatOllama(model="lfm2.5-thinking")
 
 agent = create_agent(
-    model="gpt-5-nano",
+    model=model,
     tools=[web_search],
     system_prompt=system_prompt
 )
