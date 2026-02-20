@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ### AI model dependency (OpenAI has no free tier)
 ```yaml
   curl -fsSL https://ollama.com/install.sh | sh
-  ollama pull lfm2.5-thinking # example model to pull - this one works well on cpu device ~0.7gb
+  ollama pull lfm2.5-thinking # example model to pull - this one works well on cpu device ~0.7gb or ollama run granite3.2
   ollama list # verification
   curl http://localhost:11434/api/tags # api verifications - list models
 ```
